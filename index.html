@@ -18,29 +18,32 @@
 </head>
 
 <body>
-    <input id="navbar-indicator" class="navbar-collapse" type="checkbox" checked>
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="./imgs/logo.jpg.jpg" alt="" style="width: 300px; height: 50px;">
-        </a>
-        <ul class="nav nav-underline" style="float: right;">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">VỀ CHÚNG TÔI</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CHƯƠNG TRÌNH ĐÀO TẠO </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">THÔNG TIN</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">FQA</a>
-            </li>
-        </ul>
-        <label class="navbar-toggler" for="navbar-indicator">
-            +
-        </label>
-    </nav>
+    <header>
+        <input id="navbar-indicator" class="navbar-collapse" type="checkbox" checked>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/logo.jpg.jpg" alt="" style="width: 300px; height: 50px;">
+            </a>
+            <ul class="nav nav-underline" style="float: right;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">VỀ CHÚNG TÔI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CHƯƠNG TRÌNH ĐÀO TẠO </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">THÔNG TIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FQA</a>
+                </li>
+            </ul>
+            <label class="navbar-toggler" for="navbar-indicator">
+                +
+            </label>
+        </nav>
+    </header>
+
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -67,8 +70,8 @@
     </div>
     <br>
     <br>
-    <div class="alert alert-primary" role="alert">
-        <h3 style="text-align: center;">TỔNG QUAN TRƯỜNG CAO ĐẢNG AN MINH MẠNG ISPACE</h3>
+    <div>
+        <h3 style="text-align: center; ">TỔNG QUAN TRƯỜNG CAO ĐẢNG AN MINH MẠNG ISPACE</h3>
     </div>
 
     <div class="clearfix">
@@ -76,7 +79,7 @@
         <img src="./imgs/Asset-5_op3.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..."
             style="width: 600px; height: 400px;">
 
-        <p>
+        <p style="margin-left: 25px; font-size: 20px; font-style: italic;">
             Trường Cao Đẳng An ninh mạng iSPACE là đơn vị tiên phong trong đào tạo thực hành từ năm 2006 theo tiêu
             chí tuyển sinh đi liền tuyển dụng. Từ năm 2015, Trường iSPACE thực hiện chương trình tuyển sinh và đào
             tạo đặc biệt “CNTT- Học để làm việc ngay”. Chương trình mang đến cho các bạn trẻ đam mê CNTT ba giá trị
@@ -115,9 +118,11 @@
             </div>
         </div>
     </div>
-
+    <br>
+    <br>
+    <br>
     <div>
-        <h3>DOANH NGHIỆP</h3>
+        <h3 style="text-align: center; color: white;">DOANH NGHIỆP</h3>
         <marquee behavior="alternate" scrollamount="25" onMouseMove="stop()" onMouseOut="start()">
             <img class="imgs" src="./imgs/dn1.jpg"> <img class="imgs" src="./imgs/dn2.jpg"> <img class="imgs"
                 src="./imgs/dn3.jpg">
@@ -133,10 +138,12 @@
             <img class="imgs" src="./imgs/dn16.jpg">
         </marquee>
     </div>
+    <br>
+    <br>
     <div class="row justify-content-around">
-        <h2 style="text-align: center;">Câu hỏi thường gặp (FQA)</h2>
+        <h3 style="text-align: center;">Câu hỏi thường gặp (FQA)</h3>
         <div class="col-sm-5">
-            <h3>Thông tin về trường và các khóa học</h3>
+            <h4>Thông tin về trường và các khóa học</h4>
             <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Sinh viên ra trường
                 có đảm
                 bảo việc làm hay không </button>
@@ -176,7 +183,7 @@
 
         </div>
         <div class="col-sm-5">
-            <h3>Thắc mắc quá trình học</h3>
+            <h4>Thắc mắc quá trình học</h4>
             <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-black w3-left-align">Sinh viên tốt nghiệp
                 iSpace có được liên thông lên đại học không</button>
             <div id="Demo5" class="w3-container w3-hide">
@@ -254,76 +261,6 @@
             </tr>
         </table>
     </footer>
-
-    <div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Learning by doing
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Rèn nghề cho sinh viên thông qua thực hành trên lớp, trải nghiệm tại
-                        xưởng thực tập và tham gia làm việc trong các dự án thực tế.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        Môi trường đẳng cấp
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        Trải nghiệm nghề nghiệp trên hệ thống Thao trường mạng (Cyber Range) – một trong những hệ thống
-                        tiên tiến nhất thế giới hiện nay.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Accordion Item #4
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
 </body>
 
 </html>
