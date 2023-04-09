@@ -34,11 +34,6 @@
 .navbar-toggler {
     display: none;
 }
-h3 { 
-    font-style: Bold;
-    height: 90px;
-    padding-top: 25px;
-}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * *
   * Override styles to support mobile devices
